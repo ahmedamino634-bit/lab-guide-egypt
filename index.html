@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معامل مصر</title>
+    <title>معامل مصر - الفروع والأسعار</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; text-align: center; padding: 20px; }
-        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h2 { color: #004a99; margin-bottom: 20px; }
-        .lab-item { display: flex; align-items: center; justify-content: space-between; padding: 18px; margin: 12px 0; border: 1px solid #ddd; border-radius: 12px; text-decoration: none; color: #333; transition: 0.3s; background: #fff; }
-        .lab-item:hover { background-color: #eef6ff; border-color: #007bff; }
-        .lab-icon { font-size: 30px; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; direction: rtl; }
+        .container { max-width: 600px; margin: auto; }
+        .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .lab-header { width: 100%; padding: 20px; background: #004a99; color: white; border: none; text-align: right; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; }
+        .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
+        h3 { color: #004a99; margin-top: 0; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>معامل مصر</h2>
-    <p>اضغط على المعمل للمتابعة:</p>
+    <h2>قائمة معامل مصر</h2>
+    
+    <!-- مثال لمعمل المختبر -->
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">المختبر <span>▼</span></button>
+        <div class="lab-content">
+            <h3>الفروع:</h3>
+            <p>القاهرة: مدينة نصر، المعادي، المهندسين...</p>
+            <h3>أسعار التحاليل:</h3>
+            <p>تحليل مخدرات: ... جنيه | كشف طبي: ... جنيه</p>
+        </div>
+    </div>
 
-    <a href="https://alborgscan.com/branches" class="lab-item" target="_blank">
-        <span>البرج</span>
-        <span class="lab-icon">🏢</span>
-    </a>
+    <!-- كرر هذا الجزء لباقي المعامل (البرج، ألفا، إلخ) -->
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">البرج <span>▼</span></button>
+        <div class="lab-content">
+            <h3>الفروع:</h3>
+            <p>اكتب هنا عناوين فروع البرج...</p>
+            <h3>الأسعار:</h3>
+            <p>اكتب هنا تفاصيل الأسعار...</p>
+        </div>
+    </div>
 
-    <a href="https://thelab.com.eg/" class="lab-item" target="_blank">
-        <span>ذا لاب</span>
-        <span class="lab-icon">🧪</span>
-    </a>
-
-    <a href="https://alfalab.com.eg/branches/" class="lab-item" target="_blank">
-        <span>الفا</span>
-        <span class="lab-icon">🧬</span>
-    </a>
-
-    <a href="https://www.almokhtabar.com/branches" class="lab-item" target="_blank">
-        <span>المختبر</span>
-        <span class="lab-icon">🔬</span>
-    </a>
-
-    <a href="https://townlab.com.eg/branches" class="lab-item" target="_blank">
-        <span>تاون لاب</span>
-        <span class="lab-icon">🏥</span>
-    </a>
 </div>
+
+<script>
+    function toggleLab(btn) {
+        var content = btn.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+</script>
 
 </body>
 </html>
