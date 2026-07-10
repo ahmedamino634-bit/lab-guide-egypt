@@ -8,8 +8,7 @@
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; }
         .container { max-width: 600px; margin: auto; }
         .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: left; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; }
-        .lab-logo { width: 50px; height: 50px; object-fit: contain; margin-right: 15px; border-radius: 5px; background-color: #eee; }
+        .lab-header { width: 100%; padding: 20px; background: white; border: none; text-align: left; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
         .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
         .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 15px; font-weight: bold; text-align: center; color: white; }
         .call-btn { background-color: #004a99; }
@@ -24,9 +23,7 @@
     <h2>Medical Labs Directory 🏥</h2>
 
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <img src="https://ui-avatars.com/api/?name=Al+Borg&size=128&background=000&color=fff" class="lab-logo" alt="Al Borg"> Al Borg
-        </button>
+        <button class="lab-header" onclick="toggleLab(this)">Al Borg <span>▼</span></button>
         <div class="lab-content">
             <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
             <a href="tel:19911" class="btn call-btn">Hotline: 19911 📞</a>
@@ -35,9 +32,7 @@
     </div>
 
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <img src="https://ui-avatars.com/api/?name=Al+Mokhtabar&size=128&background=d32f2f&color=fff" class="lab-logo" alt="Al Mokhtabar"> Al Mokhtabar
-        </button>
+        <button class="lab-header" onclick="toggleLab(this)">Al Mokhtabar <span>▼</span></button>
         <div class="lab-content">
             <div class="price-box">Drug Test Price: 200 - 600 EGP.</div>
             <a href="tel:19014" class="btn call-btn">Hotline: 19014 📞</a>
@@ -46,9 +41,7 @@
     </div>
 
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <img src="https://ui-avatars.com/api/?name=Town+Lab&size=128&background=2e7d32&color=fff" class="lab-logo" alt="Town Lab"> Town Lab
-        </button>
+        <button class="lab-header" onclick="toggleLab(this)">Town Lab <span>▼</span></button>
         <div class="lab-content">
             <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
             <a href="tel:15767" class="btn call-btn">Hotline: 15767 📞</a>
@@ -57,9 +50,7 @@
     </div>
 
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <img src="https://ui-avatars.com/api/?name=Alfa+Labs&size=128&background=1565c0&color=fff" class="lab-logo" alt="Alfa Labs"> Alfa Labs
-        </button>
+        <button class="lab-header" onclick="toggleLab(this)">Alfa Labs <span>▼</span></button>
         <div class="lab-content">
             <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
             <a href="tel:16191" class="btn call-btn">Hotline: 16191 📞</a>
@@ -68,13 +59,11 @@
     </div>
 
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <img src="https://ui-avatars.com/api/?name=The+LAB&size=128&background=6a1b9a&color=fff" class="lab-logo" alt="The Lab"> The LAB
-        </button>
+        <button class="lab-header" onclick="toggleLab(this)">The LAB <span>▼</span></button>
         <div class="lab-content">
             <div class="price-box">Drug Test Price: 250 - 500 EGP.</div>
             <a href="tel:16458" class="btn call-btn">Hotline: 16458 📞</a>
-            <a href="https://www.google.com/maps/search/The+Lab+Egypt" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
+            <a href="https://www.google.com/maps/search/The+LAB+Medical" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
         </div>
     </div>
 
