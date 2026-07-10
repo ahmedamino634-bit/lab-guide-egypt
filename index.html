@@ -4,92 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Labs Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; }
         .container { max-width: 600px; margin: auto; }
         .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: left; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
-        .lab-logo { width: 50px; height: 50px; object-fit: contain; margin-right: 15px; border-radius: 5px; }
+        .icon { font-size: 24px; color: #004a99; margin-left: 15px; }
         .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
         .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 15px; font-weight: bold; text-align: center; color: white; }
         .call-btn { background-color: #004a99; }
         .map-btn { background-color: #28a745; }
-        .price-box { background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px; font-size: 14px; color: #856404; border: 1px solid #ffeeba; }
-        .footer { text-align: center; margin-top: 30px; padding: 20px; color: #666; font-size: 14px; border-top: 2px solid #ccc; }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <h2>Medical Labs Directory 🏥</h2>
-    
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://i.ibb.co.com/jM8V8sL/Mokhtabar.jpg" class="lab-logo"> Al Mokhtabar</div> <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <div class="price-box">Drug Test Price: 200 - 600 EGP (Depending on the number of substances).</div>
-            <a href="tel:19014" class="btn call-btn">Hotline: 19014 📞</a>
-            <a href="https://maps.app.goo.gl/uX7G6b8Y8zVv5XG69" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
-        </div>
-    </div>
-
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://i.ibb.co.com/k6wzQ0R/Al-Borg.jpg" class="lab-logo"> Al Borg</div> <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <div class="price-box">Drug Test Price: 200 - 500 EGP (Depending on the number of substances).</div>
-            <a href="tel:19911" class="btn call-btn">Hotline: 19911 📞</a>
-            <a href="https://maps.app.goo.gl/Zq3bJv6y2JzJ6" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
-        </div>
-    </div>
-
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://i.ibb.co.com/8xYnBfM/Alfa.jpg" class="lab-logo"> Alfa Labs</div> <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <div class="price-box">Drug Test Price: 200 - 500 EGP (Depending on the number of substances).</div>
-            <a href="tel:16191" class="btn call-btn">Hotline: 16191 📞</a>
-            <a href="https://maps.app.goo.gl/N9sVp2h5mXp9" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
-        </div>
-    </div>
-
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://i.ibb.co.com/qC0Q7D8/Town-Lab.jpg" class="lab-logo"> Town Lab</div> <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <div class="price-box">Drug Test Price: 200 - 500 EGP (Depending on the number of substances).</div>
-            <a href="tel:15767" class="btn call-btn">Hotline: 15767 📞</a>
-            <a href="https://maps.app.goo.gl/9zQx7G6b8Y8zVv5X6" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
-        </div>
-    </div>
-
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://i.ibb.co.com/x7G6b8Y/The-Lab.jpg" class="lab-logo"> The LAB</div> <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <div class="price-box">Drug Test Price: 250 - 500 EGP (Depending on the number of substances).</div>
-            <a href="tel:16458" class="btn call-btn">Hotline: 16458 📞</a>
-            <a href="https://maps.app.goo.gl/y8zVv5XG69uX7G6b8" class="btn map-btn" target="_blank">View Branches on Map 📍</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        This guide is prepared by Tamer Amin
-    </div>
-
-</div>
-
-<script>
-    function toggleLab(btn) {
-        var content = btn.nextElementSibling;
-        content.style.display = (content.style.display === "block") ? "none" : "block";
-    }
-</script>
-
-</body>
-</html>
+        .price-box { background: #
+                    
