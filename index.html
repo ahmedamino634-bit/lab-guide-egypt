@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معامل مصر - اتصل فوراً</title>
+    <title>معامل مصر - دليل المعامل</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; direction: rtl; }
         .container { max-width: 600px; margin: auto; }
         .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .lab-header { width: 100%; padding: 20px; background: #004a99; color: white; border: none; text-align: right; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; }
+        .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: right; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+        .lab-logo { width: 50px; height: 50px; object-fit: contain; margin-left: 10px; }
         .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
         .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; text-align: center; }
-        .call-btn { background-color: #007bff; color: white; }
+        .call-btn { background-color: #004a99; color: white; }
         .map-btn { background-color: #28a745; color: white; }
-        h3 { color: #004a99; margin-top: 0; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>معامل مصر</h2>
+    <h2>معامل مصر 🏥</h2>
     
     <!-- البرج -->
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">البرج <span>▼</span></button>
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Al_Borg_Lab_Logo.png/200px-Al_Borg_Lab_Logo.png" class="lab-logo"> البرج</div>
+            <span>▼</span>
+        </button>
         <div class="lab-content">
             <a href="tel:19911" class="btn call-btn">اتصل بالخط الساخن: 19911 📞</a>
             <a href="https://www.google.com/maps/search/Al+Borg+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
@@ -32,7 +35,10 @@
 
     <!-- المختبر -->
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">المختبر <span>▼</span></button>
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div><img src="https://www.almokhtabar.com/assets/logo-b3917711.svg" class="lab-logo"> المختبر</div>
+            <span>▼</span>
+        </button>
         <div class="lab-content">
             <a href="tel:19014" class="btn call-btn">اتصل بالخط الساخن: 19014 📞</a>
             <a href="https://www.google.com/maps/search/Almokhtabar+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
@@ -41,7 +47,10 @@
 
     <!-- ألفا -->
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">ألفا <span>▼</span></button>
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div><img src="https://alfalab.com.eg/wp-content/uploads/2023/10/logo.png" class="lab-logo"> ألفا</div>
+            <span>▼</span>
+        </button>
         <div class="lab-content">
             <a href="tel:16191" class="btn call-btn">اتصل بالخط الساخن: 16191 📞</a>
             <a href="https://www.google.com/maps/search/Alfa+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
@@ -50,7 +59,10 @@
 
     <!-- تاون لاب -->
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">تاون لاب <span>▼</span></button>
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div><img src="https://townlab.com.eg/images/logo.png" class="lab-logo"> تاون لاب</div>
+            <span>▼</span>
+        </button>
         <div class="lab-content">
             <a href="tel:15767" class="btn call-btn">اتصل بالخط الساخن: 15767 📞</a>
             <a href="https://www.google.com/maps/search/Town+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
@@ -59,7 +71,10 @@
 
     <!-- ذا لاب -->
     <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">ذا لاب <span>▼</span></button>
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div><img src="https://thelab.com.eg/wp-content/uploads/2021/04/the-lab-logo.png" class="lab-logo"> ذا لاب</div>
+            <span>▼</span>
+        </button>
         <div class="lab-content">
             <a href="tel:16458" class="btn call-btn">اتصل بالخط الساخن: 16458 📞</a>
             <a href="https://www.google.com/maps/search/The+Lab+Egypt+branches" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
