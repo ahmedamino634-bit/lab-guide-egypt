@@ -4,16 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Labs Directory</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; }
         .container { max-width: 600px; margin: auto; }
         .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: left; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
-        .icon { font-size: 24px; color: #004a99; margin-left: 15px; }
+        .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: left; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; }
+        .lab-logo { width: 50px; height: 50px; object-fit: contain; margin-right: 15px; border-radius: 5px; }
         .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
         .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 15px; font-weight: bold; text-align: center; color: white; }
         .call-btn { background-color: #004a99; }
         .map-btn { background-color: #28a745; }
-        .price-box { background: #
-                    
+        .price-box { background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px; font-size: 14px; color: #856404; border: 1px solid #ffeeba; }
+        .footer { text-align: center; margin-top: 30px; color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Medical Labs Directory 🏥</h2>
+
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <img src="https://i.ibb.co.com/k2T3z7b/alborg.jpg" class="lab-logo" alt="Al Borg"> Al Borg
+        </button>
+        <div class="lab-content">
+            <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
+            <a href="tel:19911" class="btn call-btn">Hotline: 19911 📞</a>
+        </div>
+    </div>
+
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <img src="https://i.ibb.co.com/9nF7B3m/mokhtabar.jpg" class="lab-logo" alt="Al Mokhtabar"> Al Mokhtabar
+        </button>
+        <div class="lab-content">
+            <div class="price-box">Drug Test Price: 200 - 600 EGP.</div>
+            <a href="tel:19014" class="btn call-btn">Hotline: 19014 📞</a>
+        </div>
+    </div>
+
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <img src="https://i.ibb.co.com/W2d8K5c/townlab.jpg" class="lab-logo" alt="Town Lab"> Town Lab
+        </button>
+        <div class="lab-content">
+            <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
+            <a href="tel:15767" class="btn call-btn">Hotline: 15767 📞</a>
+        </div>
+    </div>
+
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <img src="https://i.ibb.co.com/4N3G9Zq/alfa.jpg" class="lab-logo" alt="Alfa Labs"> Alfa Labs
+        </button>
+        <div class="lab-content">
+            <div class="price-box">Drug Test Price: 200 - 500 EGP.</div>
+            <a href="tel:16191" class="btn call-btn">Hotline: 16191 📞</a>
+        </div>
+    </div>
+
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <img src="https://i.ibb.co.com/7Yf8M3w/thelab.jpg" class="lab-logo" alt="The Lab"> The LAB
+        </button>
+        <div class="lab-content">
+            <div class="price-box">Drug Test Price: 250 - 500 EGP.</div>
+            <a href="tel:16458" class="btn call-btn">Hotline: 16458 📞</a>
+        </div>
+    </div>
+
+    <div class="footer">Prepared by Tamer Amin</div>
+</div>
+
+<script>
+    function toggleLab(btn) {
+        var content = btn.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
