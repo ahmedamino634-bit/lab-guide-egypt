@@ -3,55 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معامل مصر</title>
+    <title>دليل معامل مصر</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f0f2f5; padding: 20px; direction: rtl; }
         .container { max-width: 600px; margin: auto; }
         .lab-box { background: white; margin-bottom: 10px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .lab-header { width: 100%; padding: 15px; background: white; border: none; text-align: right; font-size: 18px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
-        .lab-logo { width: 40px; height: 40px; object-fit: contain; margin-left: 10px; }
         .lab-content { padding: 15px; display: none; background: #fafafa; border-top: 1px solid #ddd; }
-        .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; text-align: center; }
+        .btn { display: block; width: 100%; margin-top: 10px; padding: 12px; text-decoration: none; border-radius: 5px; font-size: 15px; font-weight: bold; text-align: center; }
         .call-btn { background-color: #004a99; color: white; }
         .map-btn { background-color: #28a745; color: white; }
+        .price-box { background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px; font-size: 14px; color: #856404; border: 1px solid #ffeeba; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>دليل المعامل 🏥</h2>
+    <h2>دليل المعامل والتحاليل 🏥</h2>
     
-    <!-- البرج -->
-    <div class="lab-box">
-        <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://alborglab.com/wp-content/themes/alborg/images/logo.png" class="lab-logo"> البرج</div>
-            <span>▼</span>
-        </button>
-        <div class="lab-content">
-            <a href="tel:19911" class="btn call-btn">اتصل بالخط الساخن: 19911 📞</a>
-            <a href="https://www.google.com/maps/search/Al+Borg+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
-        </div>
-    </div>
-
     <!-- المختبر -->
     <div class="lab-box">
         <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://www.almokhtabar.com/wp-content/themes/almokhtabar/images/logo.png" class="lab-logo"> المختبر</div>
-            <span>▼</span>
+            <div>🧪 المختبر</div> <span>▼</span>
         </button>
         <div class="lab-content">
+            <div class="price-box">سعر تحليل المخدرات: 200 - 600 جنيه (حسب عدد المواد).</div>
             <a href="tel:19014" class="btn call-btn">اتصل بالخط الساخن: 19014 📞</a>
             <a href="https://www.google.com/maps/search/Almokhtabar+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
+        </div>
+    </div>
+
+    <!-- البرج -->
+    <div class="lab-box">
+        <button class="lab-header" onclick="toggleLab(this)">
+            <div>🔬 البرج</div> <span>▼</span>
+        </button>
+        <div class="lab-content">
+            <div class="price-box">سعر تحليل المخدرات: 200 - 500 جنيه (حسب عدد المواد).</div>
+            <a href="tel:19911" class="btn call-btn">اتصل بالخط الساخن: 19911 📞</a>
+            <a href="https://www.google.com/maps/search/Al+Borg+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
         </div>
     </div>
 
     <!-- ألفا -->
     <div class="lab-box">
         <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://alfalab.com.eg/wp-content/uploads/2023/10/logo.png" class="lab-logo"> ألفا</div>
-            <span>▼</span>
+            <div>🧬 ألفا</div> <span>▼</span>
         </button>
         <div class="lab-content">
+            <div class="price-box">سعر تحليل المخدرات: 200 - 500 جنيه (حسب عدد المواد).</div>
             <a href="tel:16191" class="btn call-btn">اتصل بالخط الساخن: 16191 📞</a>
             <a href="https://www.google.com/maps/search/Alfa+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
         </div>
@@ -60,10 +60,10 @@
     <!-- تاون لاب -->
     <div class="lab-box">
         <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://townlab.com.eg/images/logo.png" class="lab-logo"> تاون لاب</div>
-            <span>▼</span>
+            <div>💊 تاون لاب</div> <span>▼</span>
         </button>
         <div class="lab-content">
+            <div class="price-box">سعر تحليل المخدرات: 200 - 500 جنيه (حسب عدد المواد).</div>
             <a href="tel:15767" class="btn call-btn">اتصل بالخط الساخن: 15767 📞</a>
             <a href="https://www.google.com/maps/search/Town+Lab+branches+Egypt" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
         </div>
@@ -72,10 +72,10 @@
     <!-- ذا لاب -->
     <div class="lab-box">
         <button class="lab-header" onclick="toggleLab(this)">
-            <div style="display: flex; align-items: center;"><img src="https://thelab.com.eg/wp-content/uploads/2021/04/the-lab-logo.png" class="lab-logo"> ذا لاب</div>
-            <span>▼</span>
+            <div>🩺 ذا لاب</div> <span>▼</span>
         </button>
         <div class="lab-content">
+            <div class="price-box">سعر تحليل المخدرات: 250 - 500 جنيه (حسب عدد المواد).</div>
             <a href="tel:16458" class="btn call-btn">اتصل بالخط الساخن: 16458 📞</a>
             <a href="https://www.google.com/maps/search/The+Lab+Egypt+branches" class="btn map-btn" target="_blank">الفروع على الخريطة 📍</a>
         </div>
